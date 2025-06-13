@@ -8,7 +8,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ícones no canto (mantido igual) */
 .posicao-icons {
     position: fixed;
     bottom: 16px;
@@ -18,40 +17,32 @@ body {
     align-items: center;
 }
 
-.icon {
-    width: 32px;
-}
+.icon { width: 32px; }
+.icon_wifi { width: 50px; }
 
-.icon_wifi {
-    width: 50px;
-}
-
-/* Container para centralizar perfil e botão */
 .profile-container {
     position: absolute;
-    top: 50%;
+    top: 35%; /* Ajuste este valor */
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espaço entre a foto e o botão */
+    gap: 10px;
 }
 
-/* Estilo do botão Sign-in */
+.foto {
+    width: 300px;
+}
+
 .sign-in-btn {
-    width: 120px; /* Ajuste conforme necessário */
+    width: 120px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-/* Efeitos de hover no botão */
 .sign-in-btn:hover {
-    transform: scale(1.05); /* Aumenta levemente */
-    filter: brightness(1.2); /* Aumenta o brilho */
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 
-/* Opcional: efeito de "pressionado" */
-.sign-in-btn:active {
-    transform: scale(0.98);
-}
